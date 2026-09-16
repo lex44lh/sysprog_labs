@@ -1,1 +1,4 @@
-*.o\nhello\nmain
+*.o
+hello
+main
+lab*

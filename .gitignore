@@ -1,4 +1,4 @@
 *.o
 hello
-main
-lab*
+hello.asm
+hello.o

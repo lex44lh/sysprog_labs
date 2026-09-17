@@ -1,0 +1,55 @@
+Dump of assembler code for function _start:
+   0x08049000 <+0>:	b8 04 00 00 00	mov    eax,0x4
+   0x08049005 <+5>:	bb 01 00 00 00	mov    ebx,0x1
+   0x0804900a <+10>:	b9 00 a0 04 08	mov    ecx,0x804a000
+   0x0804900f <+15>:	ba 13 00 00 00	mov    edx,0x13
+   0x08049014 <+20>:	cd 80	int    0x80
+   0x08049016 <+22>:	b8 04 00 00 00	mov    eax,0x4
+   0x0804901b <+27>:	bb 01 00 00 00	mov    ebx,0x1
+   0x08049020 <+32>:	b9 13 a0 04 08	mov    ecx,0x804a013
+   0x08049025 <+37>:	ba 13 00 00 00	mov    edx,0x13
+   0x0804902a <+42>:	cd 80	int    0x80
+   0x0804902c <+44>:	b8 04 00 00 00	mov    eax,0x4
+   0x08049031 <+49>:	bb 01 00 00 00	mov    ebx,0x1
+   0x08049036 <+54>:	b9 26 a0 04 08	mov    ecx,0x804a026
+   0x0804903b <+59>:	ba 15 00 00 00	mov    edx,0x15
+   0x08049040 <+64>:	cd 80	int    0x80
+   0x08049042 <+66>:	b8 01 00 00 00	mov    eax,0x1
+   0x08049047 <+71>:	31 db	xor    ebx,ebx
+   0x08049049 <+73>:	cd 80	int    0x80
+End of assembler dump.
+
+========== C_version ==========
+Dump of assembler code for function main:
+   0x08049176 <+0>:	8d 4c 24 04	lea    ecx,[esp+0x4]
+   0x0804917a <+4>:	83 e4 f0	and    esp,0xfffffff0
+   0x0804917d <+7>:	ff 71 fc	push   DWORD PTR [ecx-0x4]
+   0x08049180 <+10>:	55	push   ebp
+   0x08049181 <+11>:	89 e5	mov    ebp,esp
+   0x08049183 <+13>:	53	push   ebx
+   0x08049184 <+14>:	51	push   ecx
+   0x08049185 <+15>:	e8 26 ff ff ff	call   0x80490b0 <__x86.get_pc_thunk.bx>
+   0x0804918a <+20>:	81 c3 76 2e 00 00	add    ebx,0x2e76
+   0x08049190 <+26>:	83 ec 0c	sub    esp,0xc
+   0x08049193 <+29>:	8d 83 08 e0 ff ff	lea    eax,[ebx-0x1ff8]
+   0x08049199 <+35>:	50	push   eax
+   0x0804919a <+36>:	e8 b1 fe ff ff	call   0x8049050 <puts@plt>
+   0x0804919f <+41>:	83 c4 10	add    esp,0x10
+   0x080491a2 <+44>:	83 ec 0c	sub    esp,0xc
+   0x080491a5 <+47>:	8d 83 1b e0 ff ff	lea    eax,[ebx-0x1fe5]
+   0x080491ab <+53>:	50	push   eax
+   0x080491ac <+54>:	e8 9f fe ff ff	call   0x8049050 <puts@plt>
+   0x080491b1 <+59>:	83 c4 10	add    esp,0x10
+   0x080491b4 <+62>:	83 ec 0c	sub    esp,0xc
+   0x080491b7 <+65>:	8d 83 2e e0 ff ff	lea    eax,[ebx-0x1fd2]
+   0x080491bd <+71>:	50	push   eax
+   0x080491be <+72>:	e8 8d fe ff ff	call   0x8049050 <puts@plt>
+   0x080491c3 <+77>:	83 c4 10	add    esp,0x10
+   0x080491c6 <+80>:	b8 00 00 00 00	mov    eax,0x0
+   0x080491cb <+85>:	8d 65 f8	lea    esp,[ebp-0x8]
+   0x080491ce <+88>:	59	pop    ecx
+   0x080491cf <+89>:	5b	pop    ebx
+   0x080491d0 <+90>:	5d	pop    ebp
+   0x080491d1 <+91>:	8d 61 fc	lea    esp,[ecx-0x4]
+   0x080491d4 <+94>:	c3	ret    
+End of assembler dump.

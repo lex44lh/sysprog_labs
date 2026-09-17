@@ -1,0 +1,21 @@
+=== ЛАБОРАТОРНАЯ РАБОТА 1 ===
+=== Wed Sep 16 21:27:47 UTC 2026 ===
+=== root, /app ===
+mkdir -p Work/... ; chmod 773 ... ; chmod 200 ...
+chmod 772 "Work/Лабораторная работа №1!"
+cp 'Text @1' 'Text $2'
+cp 'Text @1' 'Пихельсон Александр Дмитриевич/'
+mv 'Text $2' 'Лабораторная работа №1!/'
+cp 'Text @1' 'Пихельсон Александр Дмитриевич/'
+gzip 'Text @1' 'Text #3'
+tar -cvf MyAchiv.tar 'Text @1.gz' 'Text #3.gz'
+gunzip 'Text @1.gz' 'Text #3.gz'
+head -n 1 'Text @1' > 'Text #3'
+echo 'Будь осторожен! Преступник вооружен!' >> 'Text #3'
+tac '../Text @1' | rev > Result_one
+mv Result_one Result_two
+tac '../Text @1' > Result_one
+mv Result_one Result_two
+ls '../Пихельсон Александр Дмитриевич/' | grep '^T' > Result_3
+uname -a >> Result_3 ; date >> Result_3
+mkdir Lab_1 ; mv sandbox Work Work_files Lab_1/
